@@ -1,7 +1,7 @@
 # Predict Customer Personality to Boost Marketing Campaign
 
 <div align="center">
-<img src="https://img.freepik.com/free-vector/human-resourses-managers-doing-professional-staff-research-with-magnifier-human-resources-hr-team-work-headhunter-service-concept_335657-332.jpg?w=996&t=st=1703489108~exp=1703489708~hmac=b183c6a0282e1040b081bebe2af82f14d969249261220d311f5fc63f21b25e62" alt="customerpersonality" style="width:700px;height:500px;" align="center">
+<img src="https://img.freepik.com/free-vector/human-resourses-managers-doing-professional-staff-research-with-magnifier-human-resources-hr-team-work-headhunter-service-concept_335657-332.jpg?w=996&t=st=1703489108~exp=1703489708~hmac=b183c6a0282e1040b081bebe2af82f14d969249261220d311f5fc63f21b25e62" alt="customerpersonality" style="width:600px;height:400px;" align="center">
 </div> 
 
 <br>
@@ -94,3 +94,25 @@ Feature `Age`, `Income`, `TotalSpending`, `TotalTrx`, and `CVR` have outliers. I
 
 **4. Categorical Features**  
 The categorical features look neat and clean, but for `Marital Status` it can be simplified into some values. 
+
+# Business Insight 
+<br>
+
+### 1. Conversion Rate Based on Age
+<br>
+<img width="550" height="400" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/7aa816ac-6b10-484b-ac15-28a8c004359f">
+<br>
+Based on the cleaned data, the youngest age is 27 and the eldest is 80. Late twenties to thirties are our potential customers as we can see on the graph shows the highest conversion rate. The least potential is from groups 41-50 which is the middle group. The graph moves lower from the highest to the lowest group and the conversion rate then starts to grow as they get older (>51 years old). 
+
+### 2. Conversion Rate Based on Income 
+<br>
+<img width="565" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/dcf802e2-052d-496c-abd7-c8560ef19d49">
+<br> 
+The conversion rate tends to increase along with higher income groups. The highest conversion rate comes from the 90-100M income group. It indicates that income has a linear correlation with the conversion rate.  
+<br>
+
+### 3. Conversion Rate Based on Total Transactions 
+<br>
+<img width="445" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/d6615a40-9fa6-4a8e-a150-25fcf694c087">
+<br>
+
