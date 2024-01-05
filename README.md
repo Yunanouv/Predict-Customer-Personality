@@ -128,14 +128,14 @@ In this stage, we will try to cluster the data based on some aspects or variable
 ### a. Elbow Method  
 First, let's use the elbow method and visualize the inertia. Elbow method is a method that is often used to determine the number of clusters to be used in K-Means clustering. Inertia measures how well a dataset was clustered by K-Means. It is calculated by measuring the distance between each data point and its centroid, squaring this distance, and summing these squares across one cluster.  
 <br>
-<img width="550" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/daffb53c-272f-4718-bfa1-342e8e4b362e">
-<img width="650" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/ab602589-3359-40e5-b379-058d0a94b8aa">
+<img width="650" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/daffb53c-272f-4718-bfa1-342e8e4b362e">
+<img width="750" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/ab602589-3359-40e5-b379-058d0a94b8aa">
 <br>
 
 ### b. Silhouette Score  
 The silhouette score of a point measures how close that point lies to its nearest neighbor points, across all clusters. It provides information about clustering quality which can be used to determine whether further refinement by clustering should be performed on the current clustering.  
 <br>
-<img width="695" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/881e3914-9b97-4655-9adc-e81facc1fabf">
+<img width="750" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/881e3914-9b97-4655-9adc-e81facc1fabf">
 <br>
 From the Elbow Method and Silhouette Score, the optimal cluster is 4 clusters and has good distribution data for each cluster.  
 <br>
@@ -144,10 +144,31 @@ From the Elbow Method and Silhouette Score, the optimal cluster is 4 clusters an
 The distribution of each cluster can be seen below.  
 <br>
 <img width="650" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/ec01426c-2e8d-40a8-a146-cd2390d1021d">
-<br>
+<br> 
+<img width="400" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/f1831e19-58dc-4ef4-b3d6-731b76e3cd8a">
+
 The results of the clustering that has been carried out previously can be interpreted based on the characteristics of each group, how the cluster tends to respond to existing marketing campaigns, and what the potential revenue results will be if we carry out marketing retargeting to that cluster.  
 Now, let's see the statistics for each cluster from some features (Recency, Total Transactions, Spending, Total Accepted Campaign, and Conversion Rate).  
-<img width="750" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/13bba604-9cf0-4491-bbed-ef8d8bab7b4d">
+<img width="900" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/13bba604-9cf0-4491-bbed-ef8d8bab7b4d">
 <br>
 The graph of the median from some features corresponding to each cluster.
-<img width="800" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/d55ce858-bf49-41b1-983a-648b3d61266b">
+<img width="900" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/d55ce858-bf49-41b1-983a-648b3d61266b">  
+
+It looks like `Recency`  and `Age` don't have a big impact on differentiating the cluster because the gap between each cluster is low. We only know that cluster 0 has the biggest recency.  
+Meanwhile, `Total Transactions` has a similar mean and median and we can conclude that clusters 0 and 3 are the highest. For other features, all the patterns seem similar where the most potential cluster in order are 0 > 3 > 2 > 1.  
+
+### Cluster 0 (The Most Potential Customer)  
+
+They tend to respond to existing marketing campaigns. This cluster has the most total transactions and the highest income & spending among others. This cluster also has the highest Conversion Rate. For this cluster, rewarding or sometimes giving a gift is highly recommended. **The best campaign for Cluster 0 is they will get a special gift after spending a certain money (for example:  for a minimum transaction of 1 million).**  
+
+### Cluster 1 (The 2nd Potential Customer)  
+
+This cluster has many transactions same as Cluster 0 but they spent lower than Cluster 0. We can say that they may often make transactions but in small amounts because they also have lower income than Cluster 0. But when we look at the Conversion Rate is low compared to Cluster 0. It may be indicated that the large total transactions are coming from a large number of customers since this cluster has the most total customers (615 customers),  because the tendency to convert the campaign is low. **The best campaigns for Cluster 1 are to get lower prices for bundling products so that in one transaction the spending is higher than before or they can get special discounts after purchasing for some times (for example after 5 transactions) which will increase the conversion rate.** 
+
+### Cluster 2  
+
+This cluster has total transactions and spending lower compared to the 2 previous clusters. But if we see from their income, it's quite normal (range 4 of 8). So, it may be indicated that these customers are economical customers who would only buy what they need. **The best campaign for Cluster 2 is to offer high-quality products with high prices so even if they make fewer transactions, the spending still can be high.** 
+
+### Cluster 1
+
+This cluster has the least potential customers. They have the lowest rank for all indicators. It can be interpreted that because this cluster has the lowest income, it affected the total amounts of spending and total transactions, even the Conversion Rate. **The best campaign for Cluster 1 is to make them start to buy new kinds of products to make them interested in buying by giving special prices for the first purchase.**
