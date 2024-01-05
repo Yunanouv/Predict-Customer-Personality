@@ -120,3 +120,34 @@ The conversion rate tends to increase along with higher income groups. The highe
 It can be seen that customer spending has a strong correlation with the conversion rate. The higher the spending the higher the conversion rate for them to do other transactions.
 <br>
 
+# Modeling
+
+Before modeling, make sure the data has been cleaned and preprocessed. (The detailed steps are in Jupyter Notebook)
+In this stage, we will try to cluster the data based on some aspects or variables.  
+
+### a. Elbow Method  
+First, let's use the elbow method and visualize the inertia. Elbow method is a method that is often used to determine the number of clusters to be used in K-Means clustering. Inertia measures how well a dataset was clustered by K-Means. It is calculated by measuring the distance between each data point and its centroid, squaring this distance, and summing these squares across one cluster.  
+<br>
+<img width="550" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/daffb53c-272f-4718-bfa1-342e8e4b362e">
+<img width="650" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/ab602589-3359-40e5-b379-058d0a94b8aa">
+<br>
+
+### b. Silhouette Score  
+The silhouette score of a point measures how close that point lies to its nearest neighbor points, across all clusters. It provides information about clustering quality which can be used to determine whether further refinement by clustering should be performed on the current clustering.  
+<br>
+<img width="695" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/881e3914-9b97-4655-9adc-e81facc1fabf">
+<br>
+From the Elbow Method and Silhouette Score, the optimal cluster is 4 clusters and has good distribution data for each cluster.  
+<br>
+
+# Customer Personality Analysis for Each Cluster  
+The distribution of each cluster can be seen below.  
+<br>
+<img width="650" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/ec01426c-2e8d-40a8-a146-cd2390d1021d">
+<br>
+The results of the clustering that has been carried out previously can be interpreted based on the characteristics of each group, how the cluster tends to respond to existing marketing campaigns, and what the potential revenue results will be if we carry out marketing retargeting to that cluster.  
+Now, let's see the statistics for each cluster from some features (Recency, Total Transactions, Spending, Total Accepted Campaign, and Conversion Rate).  
+<img width="750" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/13bba604-9cf0-4491-bbed-ef8d8bab7b4d">
+<br>
+The graph of the median from some features corresponding to each cluster.
+<img width="800" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/d55ce858-bf49-41b1-983a-648b3d61266b">
