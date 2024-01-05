@@ -102,19 +102,21 @@ Conversion rate analysis is a search for insight into data on the percentage of 
 
 ### 1. Conversion Rate Based on Age
 <br>
-<img width="550" height="400" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/7aa816ac-6b10-484b-ac15-28a8c004359f">
+<img width="600" height="400" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/7aa816ac-6b10-484b-ac15-28a8c004359f">
 <br>
 Based on the cleaned data, the youngest age is 27 and the eldest is 80. Late twenties to thirties are our potential customers as we can see on the graph shows the highest conversion rate. The least potential is from groups 41-50 which is the middle group. The graph moves lower from the highest to the lowest group and the conversion rate then starts to grow as they get older (>51 years old). 
 
 ### 2. Conversion Rate Based on Income 
 <br>
-<img width="565" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/dcf802e2-052d-496c-abd7-c8560ef19d49">
+<img width="600" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/dcf802e2-052d-496c-abd7-c8560ef19d49">
 <br> 
 The conversion rate tends to increase along with higher income groups. The highest conversion rate comes from the 90-100M income group. It indicates that income has a linear correlation with the conversion rate.  
 <br>
 
-### 3. Conversion Rate Based on Total Transactions 
+### 3. Conversion Rate Based on Spending 
 <br>
-<img width="445" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/d6615a40-9fa6-4a8e-a150-25fcf694c087">
+<img width="600" alt="image" src="https://github.com/Yunanouv/Predict-Customer-Personality/assets/146415555/bf4d38e7-63f6-4a24-b80b-f1e6f240686c">
+<br>
+It can be seen that customer spending has a strong correlation with the conversion rate. The higher the spending the higher the conversion rate for them to do other transactions.
 <br>
 
