@@ -97,6 +97,8 @@ The categorical features look neat and clean, but for `Marital Status` it can be
 
 # Business Insight 
 <br>
+Conversion rate analysis is a search for insight into data on the percentage of website visitors what actions they take while visiting the site, and whether their actions result in a purchase transaction or not while visiting the website. This can be done by performing feature engineering on the data variables presented so that it can produce a new column, that is the Conversion Rate.  
+<br>
 
 ### 1. Conversion Rate Based on Age
 <br>
